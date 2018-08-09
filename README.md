@@ -1,6 +1,6 @@
 # LR-Challenge-201808
-Spring Boot Demo App
-This is a demo app about Basic sales tax
+A Spring Boot Demo App.
+This is a demo app about Basic sales tax.
 
 To support the development the following technologies was used:
 
