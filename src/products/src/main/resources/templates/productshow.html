@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+
+    <title>Product</title>
+
+    <!--/*/ <th:block th:include="fragments/headerinc :: head"></th:block> /*/-->
+</head>
+<body>
+<div class="container">
+    <!--/*/ <th:block th:include="fragments/header :: header"></th:block> /*/-->
+
+    <h2>Product Details</h2>
+        <div style="padding-bottom: 20 px !important;">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Product Id:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-static" th:text="${product.id}" >Product Id</p></div>
+                </div>
+                <div class="form-group">
+                <label class="col-sm-2 control-label">Description:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" required="required" readonly="readonly" th:field="*{product.description}"/>
+                </div>
+	            </div>
+	            <div class="form-group">
+	                <label class="col-sm-2 control-label">Price:</label>
+	                <div class="col-sm-10">
+	                    <input type="text" class="form-control" required="required" readonly="readonly" th:field="*{product.price}"/>
+	                </div>
+	            </div>
+	            <div class="form-group">
+	                <label class="col-sm-2 control-label">TaxPrice:</label>
+	                <div class="col-sm-10">
+	                    <input type="text" class="form-control" required="required" readonly="readonly" th:field="*{product.taxPrice}"/>
+	                </div>
+	            </div>
+	            <div class="form-group">
+	                <label class="col-sm-2 control-label">FinalPrice:</label>
+	                <div class="col-sm-10">
+	                    <input type="text" class="form-control" required="required" readonly="readonly" th:field="*{product.finalPrice}"/>
+	                </div>
+	            </div>
+	            
+	            <div class="form-group">
+	                <label class="col-sm-2 control-label">Product Type:</label>
+	                <div class="col-sm-10">
+						<input type="text" class="form-control" required="required" readonly="readonly" th:field="*{product.productType.value}"/>
+					</div>
+	            </div>
+	            <div class="form-group">
+	               <label class="col-sm-2 control-label">Imported</label>
+				   <input type="checkbox" readonly="readonly" th:field="*{product.imported}" />
+	            </div>
+	            <div class="jumbotron">
+	            </div>
+            </form>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-package br.com.liferay.challenge.util;
+package br.com.liferay.challenge.foundation.util;
 
 import java.math.BigDecimal;
 

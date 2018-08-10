@@ -1,4 +1,7 @@
-package br.com.liferay.challenge.model.enums;
+package br.com.liferay.challenge.products.model.enums;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public enum ProductType {
 
@@ -31,5 +34,12 @@ public enum ProductType {
 		this.value = value;
 	}
 
+	public static List<ProductType> getAllValues(){
+		List<ProductType> list = new ArrayList<>();
+		for (ProductType productType : ProductType.values()) {
+			list.add(productType);
+		}	
+		return list ;
+	}
     
 }

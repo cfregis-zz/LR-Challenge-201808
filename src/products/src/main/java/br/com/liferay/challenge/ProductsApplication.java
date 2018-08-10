@@ -1,4 +1,4 @@
-package br.com.liferay.challenge.products;
+package br.com.liferay.challenge;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
